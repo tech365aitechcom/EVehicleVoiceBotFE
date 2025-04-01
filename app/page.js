@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Calendar, Clock, MessageCircle, Phone, X } from "lucide-react";
+import { BatteryCharging, Calendar, Clock, FileText, MapPin, MessageCircle, Phone, X } from "lucide-react";
 import axios from "axios";
 import { baseURL } from "./urls";
 import VapiAssistant from "./components/VapiAssistant";
@@ -423,29 +423,29 @@ export default function Home() {
 
   const features = [
     {
-      icon: Calendar,
-      title: "24/7 Scheduling",
+      icon: BatteryCharging,
+      title: "24/7 EV Information",
       description:
-        "Book your appointments anytime, anywhere with our intelligent booking system",
+        "Get answers about electric vehicles anytime, anywhere with our intelligent voice assistant",
     },
     {
-      icon: Clock,
-      title: "Instant Confirmation",
+      icon: MapPin,
+      title: "Charging Station Finder",
       description:
-        "Receive immediate confirmations and automated appointment reminders",
+        "Locate nearby charging stations and receive real-time availability updates",
     },
     {
       icon: MessageCircle,
-      title: "Smart Assistant",
+      title: "Personalized EV Guidance",
       description:
-        "AI-powered scheduling that learns your preferences for the perfect time slot",
+        "AI-powered assistant that learns your driving habits to provide tailored EV recommendations",
     },
     {
-      icon: Phone,
-      title: "Priority Care",
+      icon: FileText,
+      title: "Incentive Navigator",
       description:
-        "Immediate assistance for emergencies with priority scheduling",
-    },
+        "Stay updated on the latest EV incentives, tax credits, and rebates in your area",
+    }
   ];
 
   return (
@@ -460,10 +460,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-12 md:mb-20">
             <h1 className="mb-4 md:mb-6 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
-              Practice<span className="text-blue-600">Agent</span>
+              EV<span className="text-blue-600">Agent</span>
             </h1>
             <p className="mb-6 md:mb-10 text-lg md:text-xl text-gray-600">
-              Experience the future of appointment scheduling
+              Experience the future of EV voicebots
             </p>
             <div className="flex justify-center gap-2 items-center">
               {/* <button
